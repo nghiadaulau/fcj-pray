@@ -33,7 +33,7 @@ const limiter = rateLimit({
 
 // Middleware
 app.use(express.json({ limit: '10mb' }));
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Apply rate limiting to API routes
 app.use('/api/', limiter);
@@ -138,7 +138,7 @@ app.get('/api/status', async (req, res) => {
 
 // Serve static files
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Error handling middleware
