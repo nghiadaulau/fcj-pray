@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCJ-Pray - Thắp Hương Online</title>
+    <link rel="icon" type="image/png" href="fcj-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="fcj-logo.png" alt="FCJ Logo" class="logo">
+                <h1 class="title">FCJ-Pray</h1>
+            </div>
+            <p class="subtitle">Thắp Hương Online - Cầu Nguyện An Lành</p>
+        </header>
+
+        <main class="main-content">
+            <div class="pray-area">
+                <div class="incense-container">
+                    <div class="main-image-container" id="mainImageContainer">
+                        <img src="main.png" alt="Main Image" class="main-image" id="mainImage">
+                    </div>
+                </div>
+                
+                <div class="pray-form">
+                    <h2>Thắp Hương Cầu Nguyện</h2>
+                    <form id="prayForm">
+                        <div class="form-group">
+                            <label for="name">Họ và Tên:</label>
+                            <input type="text" id="name" name="name" required placeholder="Nhập họ và tên của bạn">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email (tùy chọn):</label>
+                            <input type="email" id="email" name="email" placeholder="Nhập email nếu muốn (để giữ riêng tư có thể để trống)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="prayer">Lời Cầu Nguyện (tùy chọn):</label>
+                            <textarea id="prayer" name="prayer" placeholder="Viết lời cầu nguyện của bạn..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="pray-button" id="prayButton">
+                            <span class="button-text">Thắp Hương</span>
+                            <div class="button-icon">🕯️</div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <div class="success-message" id="successMessage" style="display: none;">
+            <div class="message-content">
+                <h3>🙏 Cảm ơn bạn đã thắp hương!</h3>
+                <p>Lời cầu nguyện của bạn đã được ghi nhận. Chúc bạn bình an và hạnh phúc!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="floating-particles" id="particles"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
