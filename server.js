@@ -57,7 +57,7 @@ async function sendToTelegram(data) {
         const message = `🕯️ *FCJ-Pray - Thắp Hương Online*
 
 👤 *Tên:* ${data.name}
-${data.email ? `📧 *Email:* ${data.email}` : '🔒 *Email:* Không cung cấp (riêng tư)'}
+${data.email ? `📧 *Email:* ${data.email}` : '🔒 *Email:* Người bí ẩn'}
 ⏰ *Thời gian:* ${new Date(data.timestamp).toLocaleString('vi-VN')}
 ${data.prayer ? `🙏 *Lời cầu nguyện:* ${data.prayer}` : ''}
 

@@ -192,7 +192,7 @@ When someone submits a prayer, you'll receive a formatted message:
 
 👤 Tên: [Tên người dùng]
 📧 Email: [Email] (nếu có)
-🔒 Email: Không cung cấp (riêng tư) (nếu không có)
+🔒 Email: Người bí ẩn
 ⏰ Thời gian: [Ngày giờ]
 🙏 Lời cầu nguyện: [Lời cầu nguyện] (nếu có)
 
